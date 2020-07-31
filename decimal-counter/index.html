@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Decimal Counter</title>
+  <meta name="author" content="">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+
+  <script>
+    function decimalCounter (decimal) {
+      for (var i = 0; i < decimal.length; i++) {
+        if (decimal[i] === ".") {
+          return (decimal.length - i) - 1;
+        }
+      }
+      return 0;
+    }
+  </script>
+</body>
+
+</html>
