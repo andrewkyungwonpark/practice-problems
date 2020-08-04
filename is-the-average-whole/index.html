@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Is The Average Whole</title>
+  <meta name="author" content="">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+
+  <script>
+    function isTheAverageWhole(numbersArr) {
+      var result = 0;
+      for (var i = 0; i < numbersArr.length; i++) {
+        result += numbersArr[i];
+      }
+      var average = result / numbersArr.length;
+      return Number.isInteger(average);
+    };
+
+    console.log(isTheAverageWhole([1, 3, 4, 4]));
+    console.log(isTheAverageWhole([3, 4]));
+    console.log(isTheAverageWhole([5, 5, 5]));
+  </script>
+</body>
+
+</html>
