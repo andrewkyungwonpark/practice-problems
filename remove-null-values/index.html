@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Remove Null Values</title>
+  <meta name="author" content="">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+
+  <script>
+
+    //psuedo code
+    //need to pass an array as the argument
+    //to check for null values, perhaps an if statement,
+    //or possibly filter function
+    //hi cody
+
+    function removeNullValues(array) {
+      return array.filter(x => x !==null)
+    };
+
+    console.log('removeNullValues:', removeNullValues([3, 5, null, null, 87, 'hello', 'goodbye']))
+    console.log('removeNullValues:', removeNullValues([true, null, false, {}, null, 43, "node"]));
+    console.log('removeNullValues:', removeNullValues([null, null, null, 7, null, "eight"]))
+  </script>
+</body>
+
+</html>
