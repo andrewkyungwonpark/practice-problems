@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Word Builder</title>
+  <meta name="author" content="">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+
+  <script>
+
+    //psuedo code
+    //Pass a string as an argument
+    //return an array (declare variable for array literal)
+    //Have an empty string so it can keep adding to itself
+    //use a method to find specific index of a string (charAt)
+    //Iterate through that string (for loop)
+    //
+    //hi cody what's your favorite coffee variant
+
+    function wordBuilder(wordToSpell) {
+      var result = [];
+      var letter = '';
+      for (var i=0; i<wordToSpell.length; i++) {
+        letter += wordToSpell.charAt(i);
+        result.push(letter);
+      }
+      return result;
+    }
+
+
+  </script>
+</body>
+
+</html>
