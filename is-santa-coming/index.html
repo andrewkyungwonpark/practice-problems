@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Is Santa Coming</title>
+  <meta name="author" content="">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+
+  <script>
+
+    //psuedo code
+    //use date object
+    //new Date() passed as argument
+    //if statement checking to see if current Date is Christmas Eve
+    //because format of Date object is YY/MM/DD, need to specifically target month and day
+    //while leaving everything else in tact
+
+    function isSantaComing(dateObject) {
+      if (dateObject.getMonth() === 11 && dateObject.getDate() === 24) {
+        return true
+      } else {
+        return false
+      }
+    }
+
+  </script>
+</body>
+
+</html>
