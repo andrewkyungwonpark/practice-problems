@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Odd Up Even Down</title>
+  <meta name="author" content="">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+
+  <script>
+
+    //psuedo code
+    //check to see if each number passed in the array is even or odd
+    //if odd, incremement by 1
+    //if even, decrement by 1
+    //for loop and if statement both needed
+    //
+
+    function oddUpEvenDown(arr) {
+      arr = arr.slice();
+      for (var i=0; i<arr.length; i++) {
+        if (arr[i] % 2 === 0) {
+          arr[i]--
+        } else {
+          arr[i]++
+        }
+      }
+      return arr;
+    }
+
+  </script>
+</body>
+
+</html>
