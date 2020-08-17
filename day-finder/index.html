@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Day Finder</title>
+  <meta name="author" content="">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+
+  <script>
+
+    //psuedo code
+    //function takes date in MM/DD/YYYY format and returns day of the week
+    //maybe have each day of the week in an array and then have the function return the index of the week array?
+    //getDay method returns day of week in number
+
+    function dayFinder(stringDate) {
+      const weekArr = [
+        "Sunday",
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday"
+      ];
+      const date = new Date(stringDate)
+      return weekArr[date.getDay()];
+    }
+
+  </script>
+</body>
+
+</html>
