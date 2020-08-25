@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Spell Checker</title>
+  <meta name="author" content="">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+
+  <script>
+
+    //psuedo code
+    //function takes two arrays as parameters
+    //each array is the same, and you compare them against each other
+    //if the same, push them to the correct property of the object literal
+    //if different, push them to the incorrect
+
+    function spellChecker(userWords, correctWords) {
+      const result = {
+        correct: [],
+        incorrect: [],
+      };
+      for (let i = 0; i < userWords.length; i++) {
+        if (userWords[i] === correctWords[i]) {
+          result.correct.push(userWords[i]);
+        } else {
+          result.incorrect.push(userWords[i]);
+        }
+      }
+      return result;
+    }
+  </script>
+</body>
+
+</html>
