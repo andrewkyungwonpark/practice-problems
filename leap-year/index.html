@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Leap Year</title>
+  <meta name="author" content="">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+
+  <script>
+  function leapYear(year) {
+    if (Number.isInteger(year / 4)) {
+      return true;
+    } else if (Number.isInteger(year / 400)) {
+      return false;
+    } else {
+      return false;
+    }
+  }
+  </script>
+</body>
+
+</html>
