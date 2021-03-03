@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>A Day at the Market</title>
+  <meta name="author" content="">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+
+  <script>
+  function whoWinsTonight(coins, space, price, size) {
+    var bill = Math.floor(coins / price);
+    var will = Math.floor(space / size);
+
+    if (bill === will) {
+      return 'Tie';
+    }
+
+    return bill > will ? 'Bill' : 'Will';
+  }
+  </script>
+</body>
+
+</html>
