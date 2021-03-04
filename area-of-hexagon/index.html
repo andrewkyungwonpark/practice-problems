@@ -13,13 +13,14 @@
 
   <script>
   function areaofhexagon(x) {
-    if (!x) {
+    if (x <= 0) {
       return null
     } else {
       let area = (3 * Math.sqrt(3) * x * x) / 2
-      return parseFloat(area).toFixed(1)
+      return parseFloat(area.toFixed(1))
     }
   }
+
   </script>
 </body>
 
