@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Even or Odd</title>
+  <meta name="author" content="">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+
+  <script>
+  const evenOrOdd = arr => {
+    if (arr.length === 0) {
+      return 'even';
+    }
+    return arr.reduce((a, b) => a + b) % 2 ? 'odd' : 'even';
+  }
+  </script>
+</body>
+
+</html>
