@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Payscale Analyzer</title>
+  <meta name="author" content="">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+
+  <script>
+
+    //psuedo code
+    //function must check for largest number in arrary
+    //must also check for smallest number in array
+    //then must return the difference
+    //for loop to iterate through array
+    //if statement to check if each successive number is smaller/larger than the previous
+
+    function payscaleAnalyzer(payList) {
+      let largestNumber = payList[0];
+      let smallestNumber = payList[0];
+      for (let i = 0; i < payList.length; i++) {
+        if (payList[i] > largestNumber) {
+          largestNumber = payList[i];
+        } else if (payList[i] < smallestNumber) {
+          smallestNumber = payList[i];
+        }
+      }
+      return largestNumber - smallestNumber;
+    }
+
+  </script>
+</body>
+
+</html>
